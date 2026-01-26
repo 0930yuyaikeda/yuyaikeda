@@ -1,4 +1,4 @@
-.text {
+.ta01-text {
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -8,11 +8,11 @@
   font-weight: 700;
 }
 
-.text.is-active {
+.ta01-text.is-active {
   --y: 0;
 }
 
-.char {
+.ta01-char {
   display: inline-block;
   transform: translateY(var(--y, 110%));
   transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
