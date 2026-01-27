@@ -1,0 +1,59 @@
+---
+// ここ（フロントマター）にはGSAPを書くなよ。
+// サーバーサイドで実行されるから、ブラウザ専用のGSAPは動かない。
+import '../styles/global.css';
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Document</title>
+    </head>
+    <body>
+
+        <section class="h-[400vh] bg-black text-white relative">
+        <div class="pin-container h-screen flex items-center justify-center overflow-hidden">
+
+            <div class="relative text-[10rem] md:text-[15rem] font-black italic tracking-tighter">
+            <span class="num num-1 absolute inset-0 flex items-center justify-center opacity-0">1</span>
+            <span class="num num-2 absolute inset-0 flex items-center justify-center opacity-0">2</span>
+            <span class="num num-3 absolute inset-0 flex items-center justify-center opacity-0">3</span>
+            <span class="num num-4 absolute inset-0 flex items-center justify-center opacity-0">4</span>
+            </div>
+
+        </div>
+        </section>
+
+        <div class="h-screen bg-neutral-900 flex items-center justify-center">
+        <p class="text-white text-2xl font-light">End of Scroll</p>
+        </div>
+    </body>
+    <script>
+    import { gsap } from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
+        scrollTrigger: {
+        trigger: "section", // sectionタグをトリガーにする
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 1,
+        pin: ".pin-container",
+        }
+    });
+
+    // GSAPの処理は変わらない。
+    // クラス名の指定ミスだけはするなよ。
+    tl.to(".num-1", { opacity: 1, duration: 1 })
+        .to(".num-1", { opacity: 0, duration: 1 }, "+=0.5")
+        .to(".num-2", { opacity: 1, duration: 1 })
+        .to(".num-2", { opacity: 0, duration: 1 }, "+=0.5")
+        .to(".num-3", { opacity: 1, duration: 1 })
+        .to(".num-3", { opacity: 0, duration: 1 }, "+=0.5")
+        .to(".num-4", { opacity: 1, duration: 1 });
+    </script>
+</html>

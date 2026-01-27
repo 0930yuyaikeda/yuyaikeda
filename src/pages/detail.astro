@@ -1,0 +1,193 @@
+---
+import Layout from '../layouts/Layout2.astro';
+import yuyaikedaImage from '../assets/img/yuyaikeda_square.jpg';
+
+import myBackground from '../assets/img/sky.jpg';
+
+
+---
+
+<Layout>
+	<script>
+		import '../js/detail.js';
+    	import '../js/header-script.js';
+    </script>
+
+	<div class="fixed top-0 left-0 w-full z-10 h-7/12">
+		<header class=" p-4 flex justify-end items-center bg-gray-200 text-gray-500 md:px-8">
+
+			<nav class="hidden md:flex">
+				<ul class="flex space-x-6">
+				<li><a href="/" class="hover:opacity-80 transition-opacity">Home</a></li>
+				<li><a href="/" class="hover:opacity-80 transition-opacity">About</a></li>
+				<li><a href="/" class="hover:opacity-80 transition-opacity">Works</a></li>
+				<li><a href="/" class="hover:opacity-80 transition-opacity">Contact</a></li>
+				<li><a href="/" class="hover:opacity-80 transition-opacity">5分でわかるポートフォリオ</a></li>
+				<li><a href="/" class="hover:opacity-80 transition-opacity font-black">ENG</a></li>
+				</ul>
+			</nav>
+
+			<button id="hamburger-button" class="md:hidden">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				<path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+				</svg>
+			</button>
+
+		</header>
+
+		<nav id="mobile-nav" class="hidden fixed top-0 left-0 w-full h-full bg-gray-500 bg-opacity-80 z-50 flex items-center justify-center transition-opacity duration-500 opacity-0">
+			<ul class="flex flex-col space-y-8 text-white text-3xl items-center justify-center">
+				<li>
+					<button id="close-button" class="">
+						<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path id="close-icon" class="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+						</svg>
+					</button>
+				</li>
+				<li><a href="/" class="block hover:text-gray-400">Home</a></li>
+				<li><a href="/" class="block hover:text-gray-400">About</a></li>
+				<li><a href="/" class="block hover:text-gray-400">Works</a></li>
+				<li><a href="/" class="block hover:text-gray-400">Contact</a></li>
+				<li><a href="/" class="block hover:text-gray-400 font-black">ENG</a></li>
+			</ul>
+		</nav>
+
+		<div class=" py-15" style={`background-image: url('${myBackground.src}')`}>
+			<div class="headline">
+				<div id="ta01-main-text" class="p-2 ta01-text text-4xl md:text-6xl ">
+					<span id="main-text01" class="ta01-char font-bold text-white" style="--char-index: 1"> p </span>
+					<span id="main-text02" class="ta01-char font-bold text-white" style="--char-index: 2"> o </span>
+					<span id="main-text03" class="ta01-char font-bold text-white" style="--char-index: 3"> l </span>
+					<span id="main-text04" class="ta01-char font-bold text-white" style="--char-index: 4"> i </span>
+					<span id="main-text05" class="ta01-char font-bold text-white" style="--char-index: 5"> c </span>
+					<span id="main-text06" class="ta01-char font-bold text-white" style="--char-index: 6"> y </span>
+					<span id="main-text07" class="ta01-char font-bold text-white" style="--char-index: 7">  </span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container mx-auto px-4 mt-70">
+		<div class="flex flex-col md:flex-row md:items-center mt-12">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full md:w-3/4 text-left text-base font-serif text-gray-600">
+				<h3 id="fadein_element01" class="font-sans text-4xl font-bold animate__animated animate__fadeIn animate__slow">policy</h3>
+
+				<p id="fadein_element02" class="mt-12 animate__animated animate__fadeIn animate__slow"> — &quot; 想い &quot; を<span class="text-orange-500">デザイン</span> に — </p>
+				<p id="fadein_element03" class="mt-3 animate__animated animate__fadeIn animate__slow"> — &quot; 考え &quot; を<span class="text-blue-500">システム</span> に — </p>
+
+				<p id="fadein_element04" class="mt-12 animate__animated animate__fadeIn animate__slow">伝えたい想いをデザインを用いてカタチにします。</p>
+				<p id="fadein_element05" class="mt-3 animate__animated animate__fadeIn animate__slow">描いた考えをシステムを用いて仕組みにします。</p>
+				<p id="fadein_element06" class="mt-3 animate__animated animate__fadeIn animate__slow">フルスタックエンジニアとして開発全体に貢献します。</p>
+
+				<p id="fadein_element07" class="mt-12 opacity-0 animate__animated animate__slow">大切にしていることは、私と、私と共にお仕事をしている方々の心に「セーフゾーン」をつくって働くことです。</p>
+				<p id="fadein_element08" class="mt-3 opacity-0 animate__animated animate__slow">誰にとってもお仕事をする環境は、ひとりひとりの心の安全が保証されているべきだと考えています。</p>
+				<p id="fadein_element09" class="mt-3 opacity-0 animate__animated animate__slow">「私の発言を軽視する人はここには誰もいないんだ」と思える環境が自由な発想を生み出し、</p> 
+				<p id="fadein_element10" class="mt-3 opacity-0 animate__animated animate__slow">クリエイティブな力が活発になると考えています。</p>
+			</div>
+
+		</div>
+
+		<div class="flex flex-col md:flex-row md:items-center mt-12 border-t-1 border-gray-600 pt-10">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full md:w-3/4 text-left text-base text-gray-600">
+				<h3 id="fadein_element11" class="font-sans text-4xl font-bold opacity-0 animate__animated animate__slow">works</h3>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row md:items-center mt-12">
+			<div class="hidden md:block md:w-1/8"></div>
+
+			<div class="w-full md:w-1/4 rounded-md">
+				<div id="fadein_element12" class="m-3 opacity-0 animate__animated animate__slow">
+					<button class="w-80 md:w-75 font-sans bg-transparent hover:bg-gray-600 text-gray-600 hover:text-white py-2 border border-gray-600 hover:border-transparent rounded duration-500">
+						<a class="font-bold" href=""> Web Systems </a>
+						<p class="text-xs">開発/運用/保守</p>
+					</button>
+				</div>
+			</div>
+
+			<div class="w-full md:w-1/4 rounded-md">
+				<div id="fadein_element13" class="m-3 opacity-0 animate__animated animate__slow">
+					<button class="w-80 md:w-75 font-sans bg-transparent hover:bg-gray-600 text-gray-600 hover:text-white py-2 border border-gray-600 hover:border-transparent rounded duration-500">
+						<a class="font-bold" href=""> Web Designs </a>
+						<p class="text-xs">Webサイト構築</p>
+					</button>
+				</div>
+			</div>
+			<div class="w-full md:w-1/4 rounded-md">
+				<div id="fadein_element14" class="m-3 opacity-0 animate__animated animate__slow">
+					<button class="w-80 md:w-75 font-sans bg-transparent hover:bg-gray-600 text-gray-600 hover:text-white py-2 border border-gray-600 hover:border-transparent rounded duration-500">
+						<a class="font-bold" href=""> Graphics Designs </a>
+						<p class="text-xs">フライヤー/カタログ etc.</p>
+					</button>
+				</div>
+			</div>
+
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row md:items-center mt-12 border-t-1 border-gray-600 pt-10">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full md:w-3/4 text-left text-base text-gray-600">
+				<h3 id="fadein_element15" class="font-sans text-4xl font-bold opacity-0 animate__animated animate__slow">about</h3>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row mt-12">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full md:w-3/8">
+				<img id="fadein_element16" class="rounded opacity-0 animate__animated animate__slow" src={yuyaikedaImage.src} alt="Ikeda Photos">
+			</div>
+			<div class="w-full md:w-3/8 md:px-10 text-base text-gray-600">
+				<h3 id="fadein_element17" class="font-bold opacity-0 animate__animated animate__slow">池田 優也 / Yuya Ikeda </h3>
+				<p id="fadein_element18" class="mt-3 font-serif opacity-0 animate__animated animate__slow">1996年生まれ</p>
+				<p id="fadein_element19" class="mt-3 font-serif opacity-0 animate__animated animate__slow">東京出身、シェムリアップ在住（カンボジア）</p>
+				<p id="fadein_element20" class="mt-3 font-serif opacity-0 animate__animated animate__slow">多摩美術大学卒</p>
+				<p id="fadein_element21" class="mt-3 font-serif opacity-0 animate__animated animate__slow">日本語/英語</p>
+				<p id="fadein_element22" class="mt-3 font-serif opacity-0 animate__animated animate__slow">システムエンジニア/Web デザイナー</p>
+
+				<div class="m-12 items-center">
+					<button id="fadein_element23" class="w-full md:w-75 font-sans bg-transparent hover:bg-gray-600 text-gray-600 hover:text-white py-2 border border-gray-600 hover:border-transparent rounded duration-500 opacity-0 animate__animated animate__slow">
+						<a href=""> 詳細を見る </a>
+					</button>
+				</div>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row md:items-center mt-12 border-t-1 border-gray-600 pt-10">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full md:w-3/4 text-left text-base text-gray-600">
+				<h3 id="fadein_element24" class="font-sans text-4xl font-bold opacity-0 animate__animated animate__slow">contact</h3>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row md:items-center mt-12 pb-24">
+			<div class="hidden md:block md:w-1/8"></div>
+
+			<div class="w-full md:w-3/4 group animate__animated animate__slow">
+				<button class="w-full font-sans bg-transparent group-hover:bg-gray-600 text-gray-600 py-2 border border-gray-600 hover:border-transparent rounded duration-500">
+					<a href="">
+						<div class="headline">
+							<div id="ta01-contact-text" class="ta01-text text-xl md:text-xl font-serif">
+								<span class="ta01-char group-hover:text-white" style="--char-index: 0"> お </span>
+								<span class="ta01-char group-hover:text-white" style="--char-index: 1"> 問 </span>
+								<span class="ta01-char group-hover:text-white" style="--char-index: 2"> い </span>
+								<span class="ta01-char group-hover:text-white" style="--char-index: 3"> 合 </span>
+								<span class="ta01-char group-hover:text-white" style="--char-index: 4"> わ </span>
+								<span class="ta01-char group-hover:text-white" style="--char-index: 5"> せ </span>
+							</div>
+						</div>
+					</a>
+				</button>
+			</div>
+
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+		<div class="mb-12"></div>
+	</div>
+</Layout>
