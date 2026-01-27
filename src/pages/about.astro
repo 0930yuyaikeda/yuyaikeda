@@ -11,7 +11,7 @@ import myBackground from '../assets/img/sky.jpg';
     	import '../js/header-script.js';
     </script>
 
-    <div class=" py-15" style={`background-image: url('${myBackground.src}')`}>
+    <div class="py-15" style={`background-image: url('${myBackground.src}')`}>
         <div class="headline">
             <div id="ta01-main-text" class="p-2 ta01-text text-4xl md:text-6xl ">
                 <span id="main-text01" class="ta01-char font-bold text-white" style="--char-index: 1"> a </span>
@@ -25,13 +25,184 @@ import myBackground from '../assets/img/sky.jpg';
 
 
 	<div class="container mx-auto px-4 mt-12">
-		<div class="flex flex-col md:flex-row md:items-center mt-12">
+		<div class="flex flex-col md:flex-row">
 			<div class="hidden md:block md:w-1/8"></div>
-			<div class="w-full md:w-3/4 text-left text-base font-serif text-gray-600">
-				<h3 id="fadein_element01" class="font-sans text-4xl font-bold animate__animated animate__fadeIn animate__slow">about</h3>
-
-				<p id="fadein_element02" class="mt-3 animate__animated animate__fadeIn animate__slow">こんにちは。</p>
+			<div class="w-full md:w-3/8">
+				<img class="rounded animate__animated animate__slow" src={yuyaikedaImage.src} alt="Ikeda Photos">
 			</div>
+			<div class="w-full md:w-3/8 md:px-10  text-gray-600">
+				<h3 class="mt-12 text-center text-xl font-bold animate__animated animate__slow">池田 優也 / Yuya Ikeda </h3>
+				<p class="mt-12 text-base font-serif animate__animated animate__slow">美術大学卒業後、都内のIT企業に入社。</p>
+				<p class="mt-3 text-base font-serif animate__animated animate__slow">主にデータベース運用とWebシステムの開発を担当。</p>
+				<p class="mt-3 text-base font-serif animate__animated animate__slow">今後のキャリアを見据え英語学習に興味を持ち退社。</p>
+				<p class="mt-3 text-base font-serif animate__animated animate__slow">フィリピンでの語学留学を経てカンボジアへ渡航。</p>
+				<p class="mt-3 text-base font-serif animate__animated animate__slow">現在、NPO業務に社会貢献として関わりながら、</p>
+				<p class="mt-3 text-base font-serif animate__animated animate__slow">リモートワークでWebサイト運用の委託業務を行う。</p>
+				<p class="mt-12 text-base font-serif animate__animated animate__slow">デザインとシステムを通して、面白い発想が世の中に増えていけば良いと思っています。</p>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row md:items-center mt-12 border-t-1 border-gray-600 pt-12">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full md:w-3/4 text-left text-base text-gray-600">
+				<h3 class="font-sans text-4xl font-bold animate__animated animate__slow">history</h3>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row mt-12">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">2019</div>
+			<div class="w-full font-serif text-gray-600 md:w-5/8">多摩美術大学卒業し都内IT企業に就職。大手チケット販売サービス会社のシステム部に出向し、データベースの運用を担当。</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row mt-3">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">2021</div>
+			<div class="w-full font-serif text-gray-600 md:w-5/8">ITについて、体系的に学び直すため職業訓練校に入学。</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row mt-3">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">2022</div>
+			<div class="w-full font-serif text-gray-600 md:w-5/8">再度都内のIT企業に入社し、Webシステムの企画から開発・運用まで一貫して担当。豊洲史上の業務システム等に関わる。</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row mt-3">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">2024</div>
+			<div class="w-full font-serif text-gray-600 md:w-5/8">今後のキャリアを見据え英語学習に興味を持ち、退社。フィリピンでの語学留学を経てカンボジアへ渡航。</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row mt-3">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">2025</div>
+			<div class="w-full font-serif text-gray-600 md:w-5/8">NPO法人earth treeの活動にプロボノとして参加。現地の就労支援に携わりながらフリーランスとしても活動している。</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row md:items-center mt-12 border-t-1 border-gray-600 pt-12">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full md:w-3/4 text-left text-base text-gray-600">
+				<h3 class="font-sans text-4xl font-bold animate__animated animate__slow">design skills</h3>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row mt-12">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">Photoshop</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="50"></progress>
+			</div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">Illustrator</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress  max="100" value="100"></progress>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row mt-3">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">XD</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="100"></progress>
+			</div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">InDesign</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="50"></progress>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row mt-3">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">HTML5</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="100"></progress>
+			</div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">CSS3</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="75"></progress>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row mt-3">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">Bootstrap(FW)</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="100"></progress>
+			</div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">tailwindcss(FW)</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="75"></progress>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row md:items-center mt-12 border-t-1 border-gray-600 pt-12">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full md:w-3/4 text-left text-base text-gray-600">
+				<h3 class="font-sans text-4xl font-bold animate__animated animate__slow">IT skills</h3>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row md:items-center">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full md:w-3/4 text-left text-base text-gray-600">
+				<p class="mt-6 text-xs font-serif">情報セキュリティマネジメント資格（2021年11月取得）</p>
+				<p class="mt-3 text-xs font-serif">技能士補[国:第一種情報処理系ソフトウェア管理]（2022年03月取得）</p>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row mt-6">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">JavaScript</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="75"></progress>
+			</div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">PHP</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress  max="100" value="100"></progress>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row mt-3">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">SQL</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="100"></progress>
+			</div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">Symfony(FW)</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="75"></progress>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+
+		<div class="flex flex-col md:flex-row mt-3 pb-24">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">WordPress(CMS)</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="75"></progress>
+			</div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">microCMS & Astro(FW)</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="50"></progress>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
 		</div>
 	</div>
 </Layout>
+
+
