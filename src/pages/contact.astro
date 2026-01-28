@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout3.astro';
+import yuyaikedaImage from '../assets/img/yuyaikeda_square.jpg';
+import myBackground from '../assets/img/sky.jpg';
+
+---
+
+<Layout>
+	<script>
+		import '../js/contact.js';
+    </script>
+
+    <div class="py-15" style={`background-image: url('${myBackground.src}')`}>
+        <div class="headline">
+            <div id="ta01-main-text" class="p-2 ta01-text text-4xl md:text-6xl ">
+                <span id="main-text01" class="ta01-char font-bold text-white" style="--char-index: 1"> c </span>
+                <span id="main-text02" class="ta01-char font-bold text-white" style="--char-index: 2"> o </span>
+                <span id="main-text03" class="ta01-char font-bold text-white" style="--char-index: 3"> n </span>
+                <span id="main-text04" class="ta01-char font-bold text-white" style="--char-index: 4"> t </span>
+                <span id="main-text05" class="ta01-char font-bold text-white" style="--char-index: 5"> a </span>
+                <span id="main-text05" class="ta01-char font-bold text-white" style="--char-index: 5"> c </span>
+                <span id="main-text05" class="ta01-char font-bold text-white" style="--char-index: 5"> t </span>
+            </div>
+        </div>
+    </div>
+
+	<div class="container mx-auto px-4 mt-12">
+		<div class="flex flex-col md:flex-row">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full md:w-3/4">
+				<p class="font-serif text-gray-600">お見積もりのご相談や、無料での相談のご予約について、お気軽にご連絡ください。</p>
+				<p class="font-serif text-gray-600"><a class="underline" target="_blank" href="">プライバシポリシー</a>をご確認のうえ、下記フォームよりお願いします。</p>
+			</div>
+		</div>
+		<div class="flex flex-col md:flex-row mt-12">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full md:w-3/4">
+				<form action="./thanks_jp" method="POST" data-netlify="true" name="お問い合わせ">
+					<div class="">
+						<label for="name" class="block text-sm font-sans font-bold text-gray-600 mb-1">お名前 <span class="text-red-500">*</span></label>
+						<input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-600 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-red-500 sm:text-sm"placeholder="山田 太郎">
+					</div>
+
+					<div class="mt-6">
+						<label for="company" class="block text-sm font-sans font-bold text-gray-600 mb-1">会社名</label>
+						<input type="text" id="company" name="company" class="mt-1 block w-full px-3 py-2 border border-gray-600 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-red-500 sm:text-sm"placeholder="山田 太郎">
+					</div>
+
+					<div class="mt-6">
+						<label for="email" class="block text-sm font-sans font-bold text-gray-600 mb-1">メールアドレス <span class="text-red-500">*</span></label>
+						<input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-600 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-red-500 sm:text-sm" placeholder="example@domain.com">
+					</div>
+
+					<div class="mt-6">
+						<label for="message" class="block text-sm font-sans font-bold text-gray-600 mb-1">メッセージ <span class="text-red-500">*</span></label>
+						<textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-3 py-2 border border-gray-600 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-red-500 sm:text-sm" placeholder="お問い合わせ内容をご記入ください。"></textarea>
+					</div>
+
+					<div class="mt-6 text-center">
+						<label for="privacy" class="block text-sm font-serif text-gray-600 mb-1">プライバシポリシーを確認しました。 <span class="text-red-500">*</span></label>
+						<input type="checkbox" id="privacy" name="privacy" required class="mt-1 block w-full px-3 py-2 border border-gray-600 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-red-500 sm:text-sm">
+					</div>
+
+					<div class="mt-6 text-center">
+						<button type="submit" class="w-80 md:w-75 font-sans bg-transparent hover:bg-gray-600 text-gray-600 hover:text-white py-2 border border-gray-600 hover:border-transparent rounded duration-500">
+							送信
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+		<div class="pb-12"></div>
+	</div>
+</Layout>
+
+
