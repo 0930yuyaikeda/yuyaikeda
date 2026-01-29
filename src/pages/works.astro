@@ -15,6 +15,7 @@ import sakuraSignboard1 from '../assets/img/sakura_signboard1.png';
 
 <Layout>
 	<script>
+		import '../js/works.js';
     </script>
 
 	<div class="py-15" style={`background-image: url('${myBackground.src}')`}>
@@ -31,15 +32,15 @@ import sakuraSignboard1 from '../assets/img/sakura_signboard1.png';
 
     <div class="container mx-auto px-4 mt-12">
 
-		<div id="web_systems" class="flex flex-col md:flex-row md:items-center mt-12">
+		<div id="web_systems" class="flex flex-col md:flex-row md:items-center mt-12 animate__animated animate__fadeIn animate__slow">
 			<div class="hidden md:block md:w-1/8"></div>
 			<div class="w-full md:w-3/4 text-left text-base text-gray-600">
-				<h3 id="fadein_element01" class="font-sans text-4xl font-bold">web systems</h3>
+				<h3 class="font-sans text-4xl font-bold">web systems</h3>
 			</div>
 			<div class="hidden md:block md:w-1/8"></div>
 		</div>
 
-		<div class="flex flex-col md:flex-row mt-12">
+		<div class="flex flex-col md:flex-row mt-12 animate__animated animate__fadeIn animate__slow">
 			<div class="hidden md:block md:w-1/8"></div>
 			<div class="w-full font-bold text-gray-600 md:w-2/8">2019.10 〜 2021.02</div>
 			<div class="w-full md:w-4/8">
@@ -49,7 +50,7 @@ import sakuraSignboard1 from '../assets/img/sakura_signboard1.png';
 			<div class="hidden md:block md:w-1/8"></div>
 		</div>
 
-		<div class="flex flex-col md:flex-row mt-12 ">
+		<div class="flex flex-col md:flex-row mt-12 animate__animated animate__fadeIn animate__slow">
 			<div class="hidden md:block md:w-1/8"></div>
 			<div class="w-full font-bold text-gray-600 md:w-2/8">2022.04 〜 2024.03</div>
 			<div class="w-full font-serif text-gray-600 md:w-4/8">
@@ -59,7 +60,7 @@ import sakuraSignboard1 from '../assets/img/sakura_signboard1.png';
 			<div class="hidden md:block md:w-1/8"></div>
 		</div>
 
-		<div class="flex flex-col md:flex-row mt-12 ">
+		<div class="flex flex-col md:flex-row mt-12 animate__animated animate__fadeIn animate__slow">
 			<div class="hidden md:block md:w-1/8"></div>
 			<div class="w-full font-bold text-gray-600 md:w-2/8">2024.12 〜</div>
 			<div class="w-full font-serif text-gray-600 md:w-4/8">
@@ -72,7 +73,7 @@ import sakuraSignboard1 from '../assets/img/sakura_signboard1.png';
 		<div id="web_designs" class="flex flex-col md:flex-row md:items-center mt-12 border-t-1 border-gray-600 pt-12">
 			<div class="hidden md:block md:w-1/8"></div>
 			<div class="w-full md:w-3/4 text-left text-base text-gray-600">
-				<h3 id="fadein_element07" class="font-sans text-4xl font-bold">web designs</h3>
+				<h3 id="fadein_element01" class="font-sans text-4xl font-bold opacity-0 animate__animated animate__slow">web designs</h3>
 			</div>
 			<div class="hidden md:block md:w-1/8"></div>
 		</div>
@@ -80,7 +81,7 @@ import sakuraSignboard1 from '../assets/img/sakura_signboard1.png';
 		<div class="flex flex-col md:flex-row mt-12">
 			<div class="hidden md:block md:w-1/8"></div>
 
-            <div class="w-full md:w-3/8 rounded-md">
+            <div id="fadein_element02" class="w-full md:w-3/8 rounded-md opacity-0 animate__animated animate__slow">
 				<div class="m-3">
 					<a href="./works/journey_to_the_universe">
 						<div class="text-center p-3 font-sans bg-transparent text-gray-600 border border-gray-600 rounded hover:bg-gray-300 duration-500">
@@ -91,7 +92,7 @@ import sakuraSignboard1 from '../assets/img/sakura_signboard1.png';
 					</a>
 				</div>
 			</div>
-			<div class="w-full md:w-3/8 rounded-md">
+			<div id="fadein_element03" class="w-full md:w-3/8 rounded-md opacity-0 animate__animated animate__slow">
 				<div class="m-3">
 					<a href="./works/akihiro_tamura">
 						<div class="text-center p-3 font-sans bg-transparent text-gray-600 border border-gray-600 rounded hover:bg-gray-300 duration-500">
@@ -109,7 +110,7 @@ import sakuraSignboard1 from '../assets/img/sakura_signboard1.png';
 		<div id="graphic_designs" class="flex flex-col md:flex-row md:items-center mt-12 border-t-1 border-gray-600 pt-12">
 			<div class="hidden md:block md:w-1/8"></div>
 			<div class="w-full md:w-3/4 text-left text-base text-gray-600">
-				<h3 id="fadein_element07" class="font-sans text-4xl font-bold">graphic designs</h3>
+				<h3 id="fadein_element04" class="font-sans text-4xl font-bold opacity-0 animate__animated animate__slow">graphic designs</h3>
 			</div>
 			<div class="hidden md:block md:w-1/8"></div>
 		</div>
@@ -117,7 +118,7 @@ import sakuraSignboard1 from '../assets/img/sakura_signboard1.png';
 		<div class="flex flex-col md:flex-row mt-12">
 			<div class="hidden md:block md:w-1/8"></div>
 
-            <div class="w-full md:w-3/8 rounded-md">
+            <div id="fadein_element05" class="w-full md:w-3/8 rounded-md opacity-0 animate__animated animate__slow">
 				<div class="m-3">
 					<a href="./works/loyloy_catalog">
 						<div class="text-center p-3 font-sans bg-transparent text-gray-600 border border-gray-600 rounded hover:bg-gray-300 duration-500">
@@ -128,7 +129,7 @@ import sakuraSignboard1 from '../assets/img/sakura_signboard1.png';
 					</a>
 				</div>
 			</div>
-			<div class="w-full md:w-3/8 rounded-md">
+			<div id="fadein_element06" class="w-full md:w-3/8 rounded-md opacity-0 animate__animated animate__slow">
 				<div class="m-3">
 					<a href="./works/loyloy_flyer1">
 						<div class="text-center p-3 font-sans bg-transparent text-gray-600 border border-gray-600 rounded hover:bg-gray-300 duration-500">
@@ -143,7 +144,7 @@ import sakuraSignboard1 from '../assets/img/sakura_signboard1.png';
 			<div class="hidden md:block md:w-1/8"></div>
 		</div>
 
-		<div class="flex flex-col md:flex-row mt-3">
+		<div id="fadein_element07" class="flex flex-col md:flex-row mt-3 opacity-0 animate__animated animate__slow">
 			<div class="hidden md:block md:w-1/8"></div>
             <div class="w-full md:w-3/8 rounded-md">
 				<div class="m-3">
@@ -156,7 +157,7 @@ import sakuraSignboard1 from '../assets/img/sakura_signboard1.png';
 					</a>
 				</div>
 			</div>
-			<div class="w-full md:w-3/8 rounded-md">
+			<div id="fadein_element08" class="w-full md:w-3/8 rounded-md opacity-0 animate__animated animate__slow">
 				<div class="m-3">
 					<a href="./works/earthtree_flyer1">
 						<div class="text-center p-3 font-sans bg-transparent text-gray-600 border border-gray-600 rounded hover:bg-gray-300 duration-500">
@@ -170,7 +171,7 @@ import sakuraSignboard1 from '../assets/img/sakura_signboard1.png';
 			<div class="hidden md:block md:w-1/8"></div>
 		</div>
 
-		<div class="flex flex-col md:flex-row mt-3">
+		<div id="fadein_element09" class="flex flex-col md:flex-row mt-3 opacity-0 animate__animated animate__slow">
 			<div class="hidden md:block md:w-1/8"></div>
             <div class="w-full md:w-3/8 rounded-md">
 				<div class="m-3">
@@ -183,7 +184,7 @@ import sakuraSignboard1 from '../assets/img/sakura_signboard1.png';
 					</a>
 				</div>
 			</div>
-			<div class="w-full md:w-3/8 rounded-md">
+			<div id="fadein_element10" class="w-full md:w-3/8 rounded-md opacity-0 animate__animated animate__slow">
 				<div class="m-3">
 					<a href="./works/sakura_signboard">
 						<div class="text-center p-3 font-sans bg-transparent text-gray-600 border border-gray-600 rounded hover:bg-gray-300 duration-500">
@@ -197,7 +198,7 @@ import sakuraSignboard1 from '../assets/img/sakura_signboard1.png';
 			<div class="hidden md:block md:w-1/8"></div>
 		</div>
 
-		<div class="flex flex-col md:flex-row mt-3">
+		<div id="fadein_element11" class="flex flex-col md:flex-row mt-3 opacity-0 animate__animated animate__slow">
 			<div class="hidden md:block md:w-1/8"></div>
             <div class="w-full md:w-3/8 rounded-md">
 				<div class="m-3">
