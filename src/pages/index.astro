@@ -9,8 +9,11 @@ import Layout from '../layouts/Layout.astro';
     </script>
 
 	<div class="animate__animated animate__fadeIn">
-		<div class="container mx-auto px-4 mt-12">
-			<div class="flex flex-col md:flex-row md:items-center">
+		<div class="container mx-auto px-4">
+			<div class="flex p-5 justify-end">
+				<a class="font-sans text-gray-600 text-base font-bold" href="/">ENG</a>
+			</div>
+			<div class="flex flex-col md:flex-row md:items-center mt-12">
 				<div class="hidden md:block md:w-1/8"></div>
 
 				<div class="w-full md:w-3/4">
@@ -42,7 +45,7 @@ import Layout from '../layouts/Layout.astro';
 				<div class="hidden md:block md:w-1/8"></div>
 			</div>
 
-			<div class="flex flex-col md:flex-row md:items-center mt-12">
+			<div class="flex flex-col md:flex-row md:items-center md:mt-12 mt-3">
 				<div class="hidden md:block md:w-1/8"></div>
 
 				<div class="w-full md:w-3/4">
@@ -84,7 +87,7 @@ import Layout from '../layouts/Layout.astro';
 					<p class="text-center text-base font-serif animate__animated animate__fadeIn animate__delay-1s">— &quot; 想い &quot; を<span class="text-orange-500">デザイン</span> に —</p>
 					<p class="mt-3 text-center text-base font-serif animate__animated animate__fadeIn animate__delay-1s">— &quot; 考え &quot; を<span class="text-blue-500">システム</span> に —</p>
 
-					<p class="mt-12 text-center text-base font-sans animate__animated animate__fadeIn animate__delay-2s"> Ikeda Yuya のポートフォリオサイトへようこそ。</p>
+					<p class="mt-12 text-center text-base font-sans animate__animated animate__fadeIn animate__delay-2s">Welcome to YUYA IKEDA portfolio.</p>
 					<p class="mt-3 text-center text-base font-sans animate__animated animate__fadeIn animate__delay-2s"> ポートフォリオを選択してください。</p>
 				</div>
 
@@ -95,16 +98,13 @@ import Layout from '../layouts/Layout.astro';
 				<div class="hidden md:block md:w-1/8"></div>
 
 				<div class="p-2 w-80 md:w-3/4 text-gray-600 text-center animate__animated animate__fadeIn animate__delay-3s">
-					<button class="w-80 font-sans bg-transparent hover:bg-gray-600 text-gray-600 hover:text-white py-2 px-4 border border-gray-600 hover:border-transparent rounded duration-500">
-						<a href="./detail"> 詳しくわかるポートフォリオ </a>
-					</button>
+					<a class="inline-block w-80 font-sans bg-transparent hover:bg-gray-600 text-gray-600 hover:text-white py-2 px-4 border border-gray-600 hover:border-transparent rounded duration-500" href="/detail"> 詳しくわかるポートフォリオ </a>
+					<p class="text-xs p-2">if you have time.</p>
 				</div>
 				<div class="p-2 w-80 md:w-3/4 text-gray-600 text-center animate__animated animate__fadeIn animate__delay-3s">
-					<button class="w-80 font-sans bg-transparent hover:bg-gray-600 text-gray-600 hover:text-white py-2 px-4 border border-gray-600 hover:border-transparent rounded duration-500">
-						<a href=""> 5分でわかるポートフォリオ </a>
-					</button>
+					<a class="inline-block w-80 font-sans bg-transparent hover:bg-gray-600 text-gray-600 hover:text-white py-2 px-4 border border-gray-600 hover:border-transparent rounded duration-500" href="/quick"> 3分でわかるポートフォリオ </a>
+					<p class="text-xs p-2">if you are busy.</p>
 				</div>
-
 				<div class="hidden md:block md:w-1/8"></div>
 			</div>
 		</div>

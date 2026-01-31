@@ -93,22 +93,6 @@ window.addEventListener('scroll', () => {
 
     // ========== scroll events ==========
     // Fade In
-    if ( scrollPosition > fadeInElementTop07 ){
-        fadeInElement07.classList.remove(opacity0);
-        fadeInElement07.classList.add(animateFadeIn);
-    }
-    if ( scrollPosition > fadeInElementTop08 ){
-        fadeInElement08.classList.remove(opacity0);
-        fadeInElement08.classList.add(animateFadeIn);
-    }
-    if ( scrollPosition > fadeInElementTop09 ){
-        fadeInElement09.classList.remove(opacity0);
-        fadeInElement09.classList.add(animateFadeIn);
-    }
-    if ( scrollPosition > fadeInElementTop10 ){
-        fadeInElement10.classList.remove(opacity0);
-        fadeInElement10.classList.add(animateFadeIn);
-    }
     if ( scrollPosition > fadeInElementTop11 ){
         fadeInElement11.classList.remove(opacity0);
         fadeInElement11.classList.add(animateFadeIn);
