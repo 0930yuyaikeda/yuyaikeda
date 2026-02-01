@@ -1,13 +1,12 @@
 ---
-import Layout from '../../layouts/Layout3.astro';
-import earthtreeMuseum1 from '../../assets/img/earthtree_museum1.png';
-import earthtreeMuseum2 from '../../assets/img/earthtree_museum2.png';
-import earthtreeMuseum3 from '../../assets/img/earthtree_museum3.png';
+import Layout from '../../layouts/Layout3_jp.astro';
+import akihirotamuraWeb1 from '../../assets/img/akihirotamura_web1.png';
+import akihirotamuraWebVideo from '../../assets/mp4/akihirotamura_web1.mp4';
+
 ---
 
 <Layout>
 	<script>
-
     </script>
 
 	<div class="container mx-auto px-4 animate__animated animate__fadeIn animate__slow">
@@ -15,7 +14,7 @@ import earthtreeMuseum3 from '../../assets/img/earthtree_museum3.png';
 			<div class="hidden md:block md:w-1/8"></div>
 
             <div class="w-full md:w-6/8 rounded-md">
-                <img class="" class="" src={earthtreeMuseum1.src} alt="">
+                <img class="" src={akihirotamuraWeb1.src} alt="">
 			</div>
 
 			<div class="hidden md:block md:w-1/8"></div>
@@ -24,7 +23,7 @@ import earthtreeMuseum3 from '../../assets/img/earthtree_museum3.png';
         <div class="flex flex-col md:flex-row md:items-center mt-12 ">
 			<div class="hidden md:block md:w-1/8"></div>
 			<div class="w-full md:w-3/4 text-left text-base text-gray-600">
-				<h3 id="fadein_element11" class="font-sans text-4xl font-bold">eart htree village 資料館 キャプションパネル</h3>
+				<h3 class="font-sans text-4xl font-bold">AKIHIRO TAMURA</h3>
 			</div>
 			<div class="hidden md:block md:w-1/8"></div>
 		</div>
@@ -32,27 +31,19 @@ import earthtreeMuseum3 from '../../assets/img/earthtree_museum3.png';
         <div class="flex flex-col md:flex-row md:items-center mt-12">
 			<div class="hidden md:block md:w-1/8"></div>
 			<div class="w-full md:w-3/4 text-left">
-				<p class="text-base font-serif text-gray-600">カンボジアで活動を行うNPO法人earth treeの資料館に展示するキャプションを制作しました。</p>
-                <p class="mt-3 text-base font-serif text-gray-600">NPO法人earth treeと活動拠点であるトロペアントム村の歴史をキャプションにまとめました。</p>
-				<p class="mt-3 text-base font-serif text-gray-600">全体的な構成は統一しつつ、カンボジアの闇の歴史である内戦時代とNPO法人earth treeが関わり始めた後でキャプションのデザインを変化させました。</p>
+				<p class="text-base font-serif text-gray-600 ">俳優として活躍する田村陽大さんのWebサイトを制作しました。</p>
+                <p class="mt-3 text-base font-serif text-gray-600">都内某所で写真撮影を行い、メインビジュアルの写真とサイトのカラーを統一しました。</p>
+				<p class="mt-3 text-base font-serif text-gray-600">俳優としての魅力が伝わるように、派手なデザインや演出は行わず、シンプルかつ統一感のある作品に仕上げました。</p>
+				<p class="mt-3 text-base font-serif text-gray-600">技術選定については、AstroとTailwind CSS を使用することで読み込み速度を最適化しました。</p>
+				<p class="mt-3 text-base font-serif text-gray-600">また、MicroCMSを使用することでノーコードでコンテンツ管理できるようにしています。 </p>
 			</div>
 		</div>
 
-		<div class="flex flex-col md:flex-row mt-12">
+        <div class="flex flex-col md:flex-row mt-12">
 			<div class="hidden md:block md:w-1/8"></div>
 
             <div class="w-full md:w-6/8 rounded-md">
-                <img src={earthtreeMuseum2.src}>
-			</div>
-
-			<div class="hidden md:block md:w-1/8"></div>
-		</div>
-
-		<div class="flex flex-col md:flex-row mt-12">
-			<div class="hidden md:block md:w-1/8"></div>
-
-            <div class="w-full md:w-6/8 rounded-md">
-                <img src={earthtreeMuseum3.src}>
+                <video src={akihirotamuraWebVideo} autoplay muted loop playsinline></video>
 			</div>
 
 			<div class="hidden md:block md:w-1/8"></div>
@@ -60,22 +51,35 @@ import earthtreeMuseum3 from '../../assets/img/earthtree_museum3.png';
 
         <div class="flex flex-col md:flex-row mt-12">
 			<div class="hidden md:block md:w-1/8"></div>
+
+			<div class="w-full md:w-6/8 md:px-10 text-base text-gray-600">
+				<div class="text-center">
+					<a class="inline-block w-full font-sans bg-transparent hover:bg-gray-600 text-gray-600 hover:text-white py-2 border border-gray-600 hover:border-transparent rounded duration-500 " href="https://akihirotamura.com/" target="_blank">
+						<p>実際のサイトを見る</p>
+					</a>
+				</div>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+        <div class="flex flex-col md:flex-row mt-12">
+			<div class="hidden md:block md:w-1/8"></div>
 			<div class="w-full font-bold text-gray-600 md:w-1/8">公開時期</div>
-			<div class="w-full font-serif text-gray-600 md:w-5/8">2025.08</div>
+			<div class="w-full font-serif text-gray-600 md:w-5/8">2025.12</div>
 			<div class="hidden md:block md:w-1/8"></div>
 		</div>
 
         <div class="flex flex-col md:flex-row mt-3">
 			<div class="hidden md:block md:w-1/8"></div>
 			<div class="w-full font-bold text-gray-600 md:w-1/8">制作期間</div>
-			<div class="w-full font-serif text-gray-600 md:w-5/8">2ヶ月程度</div>
+			<div class="w-full font-serif text-gray-600 md:w-5/8">1.5ヶ月程度</div>
 			<div class="hidden md:block md:w-1/8"></div>
 		</div>
 
         <div class="flex flex-col md:flex-row mt-3">
 			<div class="hidden md:block md:w-1/8"></div>
 			<div class="w-full font-bold text-gray-600 md:w-1/8">クライアント</div>
-			<div class="w-full font-serif text-gray-600 md:w-5/8">NPO法人 earth tree</div>
+			<div class="w-full font-serif text-gray-600 md:w-5/8">知人の俳優</div>
 			<div class="hidden md:block md:w-1/8"></div>
 		</div>
 
@@ -83,7 +87,7 @@ import earthtreeMuseum3 from '../../assets/img/earthtree_museum3.png';
 			<div class="hidden md:block md:w-1/8"></div>
 			<div class="w-full font-bold text-gray-600 md:w-1/8">使用技術</div>
 			<div class="w-full font-serif text-gray-600 md:w-5/8">
-                <p>Photoshop /Illustrator</p>
+                <p>Canon EOS 80D（カメラ）/Photoshop /Illustrator /Astro /Tailwind CSS / MicroCMS</p>
             </div>
 			<div class="hidden md:block md:w-1/8"></div>
 		</div>
@@ -91,7 +95,7 @@ import earthtreeMuseum3 from '../../assets/img/earthtree_museum3.png';
         <div class="flex flex-col md:flex-row mt-3 pb-12">
 			<div class="hidden md:block md:w-1/8"></div>
 			<div class="w-full font-bold text-gray-600 md:w-1/8">担当範囲</div>
-			<div class="w-full font-serif text-gray-600 md:w-5/8">デザイン</div>
+			<div class="w-full font-serif text-gray-600 md:w-5/8">写真撮影/デザイン/コーディング</div>
 			<div class="hidden md:block md:w-1/8"></div>
 		</div>
 

@@ -1,0 +1,205 @@
+---
+import Layout from '../layouts/Layout3_en.astro';
+import yuyaikedaImage from '../assets/img/yuyaikeda_square.jpg';
+import myBackground from '../assets/img/sky.jpg';
+
+---
+
+<Layout>
+	<script>
+    	import '../js/about.js';
+    </script>
+
+    <div class="py-15" style={`background-image: url('${myBackground.src}')`}>
+        <div class="headline">
+            <div id="ta01-main-text" class="p-2 ta01-text text-4xl md:text-6xl ">
+                <span id="main-text01" class="ta01-char font-bold text-white" style="--char-index: 1"> a </span>
+                <span id="main-text02" class="ta01-char font-bold text-white" style="--char-index: 2"> b </span>
+                <span id="main-text03" class="ta01-char font-bold text-white" style="--char-index: 3"> o </span>
+                <span id="main-text04" class="ta01-char font-bold text-white" style="--char-index: 4"> u </span>
+                <span id="main-text05" class="ta01-char font-bold text-white" style="--char-index: 5"> t </span>
+            </div>
+        </div>
+    </div>
+
+	<div class="container mx-auto px-4 mt-12">
+		<div class="flex flex-col md:flex-row">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full md:w-3/8">
+				<img class="rounded animate__animated animate__fadeIn animate__slow" src={yuyaikedaImage.src} alt="Ikeda Photos">
+			</div>
+			<div class="w-full md:w-3/8 md:px-10  text-gray-600">
+				<h3 class="mt-12 text-center text-xl font-bold animate__animated animate__fadeIn animate__slow">池田 優也 / Yuya Ikeda </h3>
+				<p class="mt-12 text-base font-serif animate__animated animate__fadeIn animate__slow">After graduating from art university, I started my career at an IT company in Tokyo.</p>
+				<p class="mt-3 text-base font-serif animate__animated animate__fadeIn animate__slow">I worked mainly on database management and web system development.</p>
+				<p class="mt-3 text-base font-serif animate__animated animate__fadeIn animate__slow">Later, I decided to leave my job to study English and expand my future career options.</p>
+				<p class="mt-3 text-base font-serif animate__animated animate__fadeIn animate__slow">After studying in the Philippines, I moved to Cambodia.</p>
+				<p class="mt-3 text-base font-serif animate__animated animate__fadeIn animate__slow">Currently, I probono for an NPO while also working remotely as a freelance web manager.</p>
+				<p class="mt-3 text-base font-serif animate__animated animate__fadeIn animate__slow">Through design and technology, I want to help bring more creative and exciting ideas to the world.</p>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row md:items-center mt-12 border-t-1 border-gray-600 pt-12">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full md:w-3/4 text-left text-base text-gray-600">
+				<h3 id="fadein_element01" class="font-sans text-4xl font-bold opacity-0 animate__animated animate__slow">history</h3>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div id="fadein_element02" class="flex flex-col md:flex-row mt-12 opacity-0 animate__animated animate__slow">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">2019</div>
+			<div class="w-full font-serif text-gray-600 md:w-5/8">Graduated from Tama Art University. Started working at an IT company in Tokyo. Assigned to a major ticketing service to manage their database systems.</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div id="fadein_element03" class="flex flex-col md:flex-row mt-3 opacity-0 animate__animated animate__slow">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">2021</div>
+			<div class="w-full font-serif text-gray-600 md:w-5/8">Enrolled in a vocational school to strengthen my IT fundamentals and relearn systems from the ground up.</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div id="fadein_element04" class="flex flex-col md:flex-row mt-3 opacity-0 animate__animated animate__slow">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">2022</div>
+			<div class="w-full font-serif text-gray-600 md:w-5/8">Joined an IT firm in Tokyo, handling everything from planning to development and operations. Managed key projects, including the business system for the Toyosu Market.</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div id="fadein_element05" class="flex flex-col md:flex-row mt-3 opacity-0 animate__animated animate__slow">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">2024</div>
+			<div class="w-full font-serif text-gray-600 md:w-5/8">Left my job to focus on English for my future career. Studied at a language school in the Philippines and then moved to Cambodia.</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div id="fadein_element06" class="flex flex-col md:flex-row mt-3 opacity-0 animate__animated animate__slow">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">2025</div>
+			<div class="w-full font-serif text-gray-600 md:w-5/8">Joined the NPO "earth tree" as a pro bono member. Currently supporting local employment in Cambodia while also working as a freelance web manager.</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row md:items-center mt-12 border-t-1 border-gray-600 pt-12">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full md:w-3/4 text-left text-base text-gray-600">
+				<h3 id="fadein_element07" class="font-sans text-4xl font-bold opacity-0 animate__animated animate__slow">design skills</h3>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div id="fadein_element08" class="flex flex-col md:flex-row mt-12 opacity-0 animate__animated animate__slow">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">Photoshop</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="50"></progress>
+			</div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">Illustrator</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress  max="100" value="100"></progress>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div id="fadein_element09" class="flex flex-col md:flex-row mt-3 opacity-0 animate__animated animate__slow">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">XD</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="100"></progress>
+			</div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">InDesign</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="50"></progress>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div id="fadein_element10" class="flex flex-col md:flex-row mt-3 opacity-0 animate__animated animate__slow">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">HTML5</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="100"></progress>
+			</div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">CSS3</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="75"></progress>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div id="fadein_element11" class="flex flex-col md:flex-row mt-3 opacity-0 animate__animated animate__slow">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">Bootstrap(FW)</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="100"></progress>
+			</div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">Tailwind CSS(FW)</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="75"></progress>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row md:items-center mt-12 border-t-1 border-gray-600 pt-12">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full md:w-3/4 text-left text-base text-gray-600">
+				<h3 id="fadein_element12" class="font-sans text-4xl font-bold opacity-0 animate__animated animate__slow">IT skills</h3>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div class="flex flex-col md:flex-row md:items-center">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full md:w-3/4 text-left text-base text-gray-600">
+				<p id="fadein_element13" class="mt-6 text-xs font-serif opacity-0 animate__animated animate__slow">Information Security Management Certification in Japan, IPA (2021)</p>
+				<p id="fadein_element14" class="mt-3 text-xs font-serif opacity-0 animate__animated animate__slow">Assistant Engineer Certification of Software Management in Japan, JAVADA (2022)</p>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div id="fadein_element15" class="flex flex-col md:flex-row mt-6 opacity-0 animate__animated animate__slow">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">JavaScript</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="75"></progress>
+			</div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">PHP</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress  max="100" value="100"></progress>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+		<div id="fadein_element16" class="flex flex-col md:flex-row mt-3 opacity-0 animate__animated animate__slow">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">SQL</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="100"></progress>
+			</div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">Symfony(FW)</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="75"></progress>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+
+
+		<div id="fadein_element17" class="flex flex-col md:flex-row mt-3 pb-24 opacity-0 animate__animated animate__slow">
+			<div class="hidden md:block md:w-1/8"></div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">WordPress(CMS)</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="75"></progress>
+			</div>
+			<div class="w-full font-bold text-gray-600 md:w-1/8">microCMS & Astro(FW)</div>
+			<div class="w-full font-serif text-gray-600 md:w-2/8">
+				<progress max="100" value="50"></progress>
+			</div>
+			<div class="hidden md:block md:w-1/8"></div>
+		</div>
+	</div>
+</Layout>
+
+

@@ -3,6 +3,8 @@ import 'animate.css';
 import '../styles/global.css';
 import '../styles/loading.css';
 import '../styles/text-animation01.css';
+import Header from '../components/Header_jp.astro';
+import '../styles/text-animation01.css';
 ---
 <!doctype html>
 <html lang="ja">
@@ -20,6 +22,7 @@ import '../styles/text-animation01.css';
             <p class="loading-text">Loading...</p>
         </div>
         <div class="hidden h-screen" id="content">
+            <Header />
             <slot/>
         </div>
     </body>
